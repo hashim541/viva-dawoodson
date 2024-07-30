@@ -2,32 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 50px;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text: #0d120f;
+  --background: #ecf3ef;
+  --primary: #2c6848;
+  --secondary: #7ad6a4;
+  --accent: #26ba6b;
+  --border: rgba(122, 214, 164, .3);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dark {
+  --text: #eef8e8;
+  --background: #0a1004;
+  --primary: #69be2d;
+  --secondary: #428019;
+  --accent: #57ad1a;
+  --border: rgba(66, 128, 25, 0.3);
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.custom1 {
+  --text: #0d1109;
+  --background: #f5fbef;
+  --primary: #7ed241;
+  --secondary: #a8e67f;
+  --accent: #8fe552;
+  --border: rgba(168, 230, 127, .3);
 }
