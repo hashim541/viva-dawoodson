@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
       <meta name="google-site-verification" content="Ov4A9ItjiUK1PgYk_Rxp6lr1DbrIddyorQF4zeKB5aE" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1XDD6X7B3"></script>
         <script>
@@ -42,7 +42,7 @@ export default function RootLayout({
             gtag('config', 'G-C1XDD6X7B3');
           `}
         </script>
-      </Head>
+      </head>
       <body className={`${body3.className} bg-background text-text`}>
         {children}
       </body>
