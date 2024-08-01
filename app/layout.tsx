@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { body3 } from "@/utils/font";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Viva Dawoodson - Premier Gents Tailor in Chennai",
@@ -30,7 +31,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${body3.className} bg-background text-text`}>{children}</body>
+      <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1XDD6X7B3"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C1XDD6X7B3');
+          `}
+        </script>
+      </Head>
+      <body className={`${body3.className} bg-background text-text`}>
+        {children}
+      </body>
     </html>
   );
 }

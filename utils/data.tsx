@@ -56,10 +56,6 @@ export const collectionItems = [
     itemName: 'Waist coat',
     img:'wc4.jpg',
   },
-  // {
-  //   itemName: 'Bundi',
-  //   img:'bundi1.jpg',
-  // },
   {
     itemName: 'Bundi',
     img:'bundi2.jpg',
@@ -76,10 +72,6 @@ export const collectionItems = [
     itemName: 'Kurtha',
     img:'kurtha2.jpg',
   },
-  // {
-  //   itemName: 'Shirt',
-  //   img:'shirt1.jpg',
-  // },
   {
     itemName: 'Shirt',
     img:'shirt6.jpg',
